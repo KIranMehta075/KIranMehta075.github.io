@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart Shopping</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <h1 class="horizontal-line">Bundle & Save</h1>
+    <form id="product-form">
+        <div class="cart-options box">
+            <div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="pair" id="pair1-radio" value="pair1" onclick="showOptions('pair1')" />
+                    <div class="label-wrapper">
+                        <label for="pair1" class="label ">
+                            Pair 1
+                        </label>
+                        <label for="pair1" class="label-price">
+                            DKK 195.00
+                        </label>
+                    </div>
+                </div>
+                <div class="hidden" id="pair1-options">
+                    <div class="flex-col">
+                        <label for="sizeSelect">Size</label>
+                        <select name="sizeSelect1" id="sizeSelect1" class="m custom-select">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                    </div>
+                    <div class="flex-col">
+                        <label for="colorSelect">Color</label>
+                        <select name="colorSelect1" id="colorSelect1" class="m custom-select">
+                            <option value="red">Colour</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span>50% OFF</span>
+            </div>
+        </div>
+        <div class="cart-options box">
+            <div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="pair" id="pair2-radio" value="pair2" onclick="showOptions('pair2')" />
+                    <div class="label-wrapper">
+                        <label for="pair2" class="label">
+                            Pair 2
+                        </label>
+                        <label for="pair2" class="label-price">
+                            DKK 345.00
+                        </label>
+                    </div>
+                </div>
+                <div class="hidden" id="pair2-options">
+                    <div class="flex-col">
+                        <label for="sizeSelect">Size</label>
+                        <select name="sizeSelect2" id="sizeSelect2" class="m custom-select">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        <select name="sizeSelect2" id="sizeSelect2" class="m custom-select">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                    </div>
+                    <div class="flex-col">
+                        <label for="colorSelect">Color</label>
+                        <select name="colorSelect2" id="colorSelect2" class="m custom-select">
+                            <option value="red">Colour</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                        <select name="colorSelect2" id="colorSelect2" class="m custom-select">
+                            <option value="red">Colour</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="text">Most Popular</div>
+                <div class="text-align-end">40% OFF</div>
+            </div>
+        </div>
+        <div class="cart-options box">
+            <div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="pair" id="pair3-radio" value="pair3" onclick="showOptions('pair3')" />
+                    <div class="label-wrapper">
+                        <label for="pair3" class="label">
+                            Pair 3
+                        </label>
+                        <label for="pair3" class="label-price">
+                            DKK 528.00
+                        </label>
+                    </div>
+                </div>
+                <div id="pair3-options" class="hidden">
+                    <div class="flex-col">
+                        <label for="sizeSelect">Size</label>
+                        <select name="sizeSelect" id="sizeSelect" class="m custom-select">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        <select name="sizeSelect" id="sizeSelect" class="m custom-select">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        <select name="sizeSelect" id="sizeSelect" class="m custom-select">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                    </div>
+                    <div class="flex-col">
+                        <label for="colorSelect">Color</label>
+                        <select name="colorSelect" id="colorSelect" class="m custom-select">
+                            <option value="red">Colour</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                        <select name="colorSelect" id="colorSelect" class="m custom-select">
+                            <option value="red">Colour</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                        <select name="colorSelect" id="colorSelect" class="m custom-select">
+                            <option value="red">Colour</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span>60% OFF</span>
+            </div>
+        </div>
+        <div id="total-container">
+            <p class="text">Free 2 Day Shipping</p>
+            <p id="total">Total: DKK 360.00</p>
+        </div>
+        <div>
+            <button type="button" onclick="addToCart()" class="button">+ Add to Cart</button>
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
